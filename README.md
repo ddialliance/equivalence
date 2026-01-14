@@ -4,6 +4,11 @@
 Creating common class mappings across DDI Alliance products
 
   
+## Current Mappings
+
+- [DDI Lifecycle](https://github.com/ddialliance/equivalence/blob/main/mappings/lifecycle.sssom.tsv)
+- [DDI CDI](https://github.com/ddialliance/equivalence/blob/main/mappings/cdi.sssom.tsv)
+
 ## Background
 
 An Implementation Languages Workshop was held in Paris in December of 2022. One of the recommendations that came out of that meeting was to create an RDF "union" model that shows equivalent RDF classes across the various RDF representations of DDI products, including SDTL, XKOS, DDI Lifecycle, and DDI CDI.
