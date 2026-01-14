@@ -1,0 +1,114 @@
+@prefix cdi: <http://www.ddialliance.org/Specification/DDI-CDI/1.0/RDF/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ddi: <https://rdf-vocabulary.ddialliance.org/common#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix semapv: <https://w3id.org/semapv/vocab/> .
+@prefix sssom: <https://w3id.org/sssom/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dcterms:created a owl:AnnotationProperty .
+
+<https://github.com/ddialliance/equivalence/raw/refs/heads/main/mappings/cdi.sssom.tsv> a owl:Ontology ;
+    dcterms:created "2026-01-14"^^xsd:date ;
+    dcterms:description "Manually curated alignment of DDI CDI and the common DDI equivalence model" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> .
+
+sssom:confidence a owl:AnnotationProperty .
+
+sssom:mapping_justification a owl:AnnotationProperty .
+
+sssom:object_label a owl:AnnotationProperty .
+
+sssom:subject_label a owl:AnnotationProperty .
+
+cdi:ConceptualVariable a owl:Class ;
+    owl:equivalentClass ddi:ConceptualVariable .
+
+cdi:InstanceVariable a owl:Class ;
+    owl:equivalentClass ddi:InstanceVariable .
+
+cdi:InternationalRegistrationDataIdentifier-dataIdentifier a owl:ObjectProperty ;
+    owl:equivalentProperty ddi:itemIdentifier .
+
+cdi:InternationalRegistrationDataIdentifier-registrationAuthorityIdentifier a owl:ObjectProperty ;
+    owl:equivalentProperty ddi:agencyIdentifier .
+
+cdi:InternationalRegistrationDataIdentifier-versionIdentifier a owl:ObjectProperty ;
+    owl:equivalentProperty ddi:itemVersion .
+
+cdi:RepresentedVariable a owl:Class ;
+    owl:equivalentClass ddi:RepresentedVariable .
+
+ddi:ConceptualVariable a owl:Class .
+
+ddi:InstanceVariable a owl:Class .
+
+ddi:RepresentedVariable a owl:Class .
+
+ddi:agencyIdentifier a owl:ObjectProperty .
+
+ddi:itemIdentifier a owl:ObjectProperty .
+
+ddi:itemVersion a owl:ObjectProperty .
+
+[] a owl:Axiom ;
+    dcterms:created "2026-01-14"^^xsd:date ;
+    owl:annotatedProperty owl:equivalentClass ;
+    owl:annotatedSource cdi:RepresentedVariable ;
+    owl:annotatedTarget ddi:RepresentedVariable ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:ManualMappingCuration ;
+    sssom:object_label "NaN"^^xsd:double ;
+    sssom:subject_label "Represented Variable" .
+
+[] a owl:Axiom ;
+    dcterms:created "2026-01-14"^^xsd:date ;
+    owl:annotatedProperty owl:equivalentProperty ;
+    owl:annotatedSource cdi:InternationalRegistrationDataIdentifier-dataIdentifier ;
+    owl:annotatedTarget ddi:itemIdentifier ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:ManualMappingCuration ;
+    sssom:object_label "NaN"^^xsd:double ;
+    sssom:subject_label "Data Identifier" .
+
+[] a owl:Axiom ;
+    dcterms:created "2026-01-14"^^xsd:date ;
+    owl:annotatedProperty owl:equivalentProperty ;
+    owl:annotatedSource cdi:InternationalRegistrationDataIdentifier-registrationAuthorityIdentifier ;
+    owl:annotatedTarget ddi:agencyIdentifier ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:ManualMappingCuration ;
+    sssom:object_label "NaN"^^xsd:double ;
+    sssom:subject_label "Registration Authority Identifier" .
+
+[] a owl:Axiom ;
+    dcterms:created "2026-01-14"^^xsd:date ;
+    owl:annotatedProperty owl:equivalentClass ;
+    owl:annotatedSource cdi:InstanceVariable ;
+    owl:annotatedTarget ddi:InstanceVariable ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:ManualMappingCuration ;
+    sssom:object_label "NaN"^^xsd:double ;
+    sssom:subject_label "Variable" .
+
+[] a owl:Axiom ;
+    dcterms:created "2026-01-14"^^xsd:date ;
+    owl:annotatedProperty owl:equivalentClass ;
+    owl:annotatedSource cdi:ConceptualVariable ;
+    owl:annotatedTarget ddi:ConceptualVariable ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:ManualMappingCuration ;
+    sssom:object_label "NaN"^^xsd:double ;
+    sssom:subject_label "Conceptual Variable" .
+
+[] a owl:Axiom ;
+    dcterms:created "2026-01-14"^^xsd:date ;
+    owl:annotatedProperty owl:equivalentProperty ;
+    owl:annotatedSource cdi:InternationalRegistrationDataIdentifier-versionIdentifier ;
+    owl:annotatedTarget ddi:itemVersion ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:ManualMappingCuration ;
+    sssom:object_label "NaN"^^xsd:double ;
+    sssom:subject_label "Version Identifier" .
+
+

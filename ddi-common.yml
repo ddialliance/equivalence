@@ -1,0 +1,60 @@
+id: ddi:CommonOntology
+name: ddi
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  ddi: https://rdf-vocabulary.ddialliance.org/common#
+  ORCID: https://orcid.org/
+imports:
+  - linkml:types
+default_range: string
+default_prefix: ddi
+license: https://creativecommons.org/licenses/by/4.0/
+title: DDI Common Ontology
+description: >-
+  Common ontology for cross product DDI mapping
+
+classes:
+
+  InstanceVariable:
+    class_uri: ddi:InstanceVariable
+    description: >-
+      Description of a variable in the context of a particular dataset. Most granular element in variable cascade.
+
+  RepresentedVariable:
+    class_uri: ddi:RepresentedVariable
+    description: >-
+      Specification for the encoding of substantive values of a variable, based on a conceptual variable.
+      Represented variable is middle level of the variable cascade. Includes substantive value domains.
+      Reusable across all populations within the universe it describes.
+
+  ConceptualVariable:
+    class_uri: ddi:ConceptualVariable
+    description: >-
+      Description of the semantics of a variable independent of any particular representation or implementation.
+      A reusable, partial description of a variable limited to semantics. 
+      Semantics includes the meaning of values in the value domain, the characteristic represented, and all the associations between units and assigned values.
+      Most general level in variable cascade. Used in DDI-Lifecycle, DDI-CDI, GSIM (Generic Statistical Information Model). 
+      Top level in variable cascade, with represented variable and instance variable.
+
+slots:
+
+  itemIdentifier:
+    slot_uri: ddi:itemIdentifier
+    description: >-
+      The data identifier (DI) component of an ISO/IEC 11179-5 international registration data identifier (IRDI).
+
+  agencyIdentifier:
+    slot_uri: ddi:agencyIdentifier
+    description: >-
+      The registration authority identifier (RAI) component of an ISO/IEC 11179-5 international registration data identifier (IRDI).
+
+  itemVersion:
+    slot_uri: ddi:itemVersion
+    description: >-
+      The version identifier (VI) component of an ISO/IEC 11179-5 international registration data identifier (IRDI).
+
+  ddiUrn:
+    slot_uri: ddi:ddiUrn
+    description: >-
+      The DDI URN representation of an ISO/IEC 11179-5 international registration data identifier (IRDI).

@@ -1,0 +1,35 @@
+name: Build and Package
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Install linkml
+      run: pip install --upgrade linkml
+
+    - name: Install sssom
+      run: pip install --upgrade sssom
+
+    - name: Run build script
+      run: bash build/build.sh
+      shell: bash
+    
+    - name: Upload generated artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: generated-files
+        path: generated/

@@ -1,0 +1,14 @@
+#curie_map:
+#  cdi: http://www.ddialliance.org/Specification/DDI-CDI/1.0/RDF/
+#  ddi: https://rdf-vocabulary.ddialliance.org/common#
+#  orcid: https://orcid.org/
+#mapping_set_id: https://github.com/ddialliance/equivalence/raw/refs/heads/main/mappings/cdi.sssom.tsv
+#mapping_set_description: Manually curated alignment of DDI CDI and the common DDI equivalence model
+#license: https://creativecommons.org/licenses/by/4.0/
+subject_id	subject_label	predicate_id	object_id	mapping_justification	mapping_date	confidence	comment
+cdi:ConceptualVariable	Conceptual Variable	owl:equivalentClass	ddi:ConceptualVariable	semapv:ManualMappingCuration	2026-01-14	1	
+cdi:RepresentedVariable	Represented Variable	owl:equivalentClass	ddi:RepresentedVariable	semapv:ManualMappingCuration	2026-01-14	1	
+cdi:InstanceVariable	Variable	owl:equivalentClass	ddi:InstanceVariable	semapv:ManualMappingCuration	2026-01-14	1	
+cdi:InternationalRegistrationDataIdentifier-registrationAuthorityIdentifier	Registration Authority Identifier	owl:equivalentProperty	ddi:agencyIdentifier	semapv:ManualMappingCuration	2026-01-14	1	
+cdi:InternationalRegistrationDataIdentifier-dataIdentifier	Data Identifier	owl:equivalentProperty	ddi:itemIdentifier	semapv:ManualMappingCuration	2026-01-14	1	
+cdi:InternationalRegistrationDataIdentifier-versionIdentifier	Version Identifier	owl:equivalentProperty	ddi:itemVersion	semapv:ManualMappingCuration	2026-01-14	1	

@@ -1,0 +1,30 @@
+name: Validate SSSOM Files
+
+on:
+  pull_request:
+    branches: [ main, develop ]
+    paths:
+      - 'mappings/**/*.tsv'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Install sssom
+      run: pip install --upgrade sssom
+    
+    - name: Validate SSSOM files
+      run: |
+        set -e
+        for file in mappings/*.sssom.tsv; do
+          echo "Validating $file..."
+          sssom validate "$file"
+        done
