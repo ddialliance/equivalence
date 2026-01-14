@@ -11,12 +11,13 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
     
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v6
       with:
-        python-version: '3.11'
+        python-version: '3.13'
+        cache: 'pip'
     
     - name: Install linkml
       run: pip install --upgrade linkml
@@ -29,7 +30,7 @@ jobs:
       shell: bash
     
     - name: Upload generated artifacts
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v6
       with:
         name: generated-files
         path: generated/
