@@ -6,8 +6,8 @@ Creating common class mappings across DDI Alliance products
   
 ## Current Mappings
 
-- DDI Lifecycle [SSSOM](https://github.com/ddialliance/equivalence/blob/main/mappings/lifecycle.sssom.tsv) [OWL](https://github.com/ddialliance/equivalence/blob/main/generated/lifecycle-mapping.owl.ttl)
-- DDI CDI[SSSOM](https://github.com/ddialliance/equivalence/blob/main/mappings/cdi.sssom.tsv) [OWL](https://github.com/ddialliance/equivalence/blob/main/generated/cdi-mapping.owl.ttl)
+- DDI Lifecycle [SSSOM mapping](https://github.com/ddialliance/equivalence/blob/main/mappings/lifecycle.sssom.tsv) [OWL equivalence](https://github.com/ddialliance/equivalence/blob/main/generated/lifecycle-mapping.owl.ttl)
+- DDI CDI [SSSOM mapping](https://github.com/ddialliance/equivalence/blob/main/mappings/cdi.sssom.tsv) [OWL equivalence](https://github.com/ddialliance/equivalence/blob/main/generated/cdi-mapping.owl.ttl)
 
 ## Background
 
