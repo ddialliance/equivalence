@@ -9,7 +9,6 @@
 dcterms:created a owl:AnnotationProperty .
 
 <https://github.com/ddialliance/equivalence/raw/refs/heads/main/mappings/lifecycle.sssom.tsv> a owl:Ontology ;
-    dcterms:created "2026-01-14"^^xsd:date ;
     dcterms:description "Manually curated alignment DDI Lifecycle and the common DDI equivalence model" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> .
 
@@ -59,12 +58,12 @@ ddi:itemVersion a owl:ObjectProperty .
 [] a owl:Axiom ;
     dcterms:created "2026-01-14"^^xsd:date ;
     owl:annotatedProperty owl:equivalentProperty ;
-    owl:annotatedSource lifecycle:urn ;
-    owl:annotatedTarget ddi:ddiUrn ;
+    owl:annotatedSource lifecycle:version ;
+    owl:annotatedTarget ddi:itemVersion ;
     sssom:confidence 1e+00 ;
     sssom:mapping_justification semapv:ManualMappingCuration ;
     sssom:object_label "NaN"^^xsd:double ;
-    sssom:subject_label "DDI URN" .
+    sssom:subject_label "Version" .
 
 [] a owl:Axiom ;
     dcterms:created "2026-01-14"^^xsd:date ;
@@ -75,6 +74,36 @@ ddi:itemVersion a owl:ObjectProperty .
     sssom:mapping_justification semapv:ManualMappingCuration ;
     sssom:object_label "NaN"^^xsd:double ;
     sssom:subject_label "Agency Identifier" .
+
+[] a owl:Axiom ;
+    dcterms:created "2026-01-14"^^xsd:date ;
+    owl:annotatedProperty owl:equivalentClass ;
+    owl:annotatedSource lifecycle:RepresentedVariable ;
+    owl:annotatedTarget ddi:RepresentedVariable ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:ManualMappingCuration ;
+    sssom:object_label "NaN"^^xsd:double ;
+    sssom:subject_label "Represented Variable" .
+
+[] a owl:Axiom ;
+    dcterms:created "2026-01-13"^^xsd:date ;
+    owl:annotatedProperty owl:equivalentProperty ;
+    owl:annotatedSource lifecycle:urn ;
+    owl:annotatedTarget ddi:ddiUrn ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:ManualMappingCuration ;
+    sssom:object_label "NaN"^^xsd:double ;
+    sssom:subject_label "DDI URN" .
+
+[] a owl:Axiom ;
+    dcterms:created "2026-01-14"^^xsd:date ;
+    owl:annotatedProperty owl:equivalentClass ;
+    owl:annotatedSource lifecycle:Variable ;
+    owl:annotatedTarget ddi:InstanceVariable ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:ManualMappingCuration ;
+    sssom:object_label "NaN"^^xsd:double ;
+    sssom:subject_label "Variable" .
 
 [] a owl:Axiom ;
     dcterms:created "2026-01-14"^^xsd:date ;
@@ -89,41 +118,11 @@ ddi:itemVersion a owl:ObjectProperty .
 [] a owl:Axiom ;
     dcterms:created "2026-01-14"^^xsd:date ;
     owl:annotatedProperty owl:equivalentClass ;
-    owl:annotatedSource lifecycle:RepresentedVariable ;
-    owl:annotatedTarget ddi:RepresentedVariable ;
-    sssom:confidence 1e+00 ;
-    sssom:mapping_justification semapv:ManualMappingCuration ;
-    sssom:object_label "NaN"^^xsd:double ;
-    sssom:subject_label "Represented Variable" .
-
-[] a owl:Axiom ;
-    dcterms:created "2026-01-14"^^xsd:date ;
-    owl:annotatedProperty owl:equivalentClass ;
     owl:annotatedSource lifecycle:ConceptualVariable ;
     owl:annotatedTarget ddi:ConceptualVariable ;
     sssom:confidence 1e+00 ;
     sssom:mapping_justification semapv:ManualMappingCuration ;
     sssom:object_label "NaN"^^xsd:double ;
     sssom:subject_label "Conceptual Variable" .
-
-[] a owl:Axiom ;
-    dcterms:created "2026-01-14"^^xsd:date ;
-    owl:annotatedProperty owl:equivalentProperty ;
-    owl:annotatedSource lifecycle:version ;
-    owl:annotatedTarget ddi:itemVersion ;
-    sssom:confidence 1e+00 ;
-    sssom:mapping_justification semapv:ManualMappingCuration ;
-    sssom:object_label "NaN"^^xsd:double ;
-    sssom:subject_label "Version" .
-
-[] a owl:Axiom ;
-    dcterms:created "2026-01-14"^^xsd:date ;
-    owl:annotatedProperty owl:equivalentClass ;
-    owl:annotatedSource lifecycle:Variable ;
-    owl:annotatedTarget ddi:InstanceVariable ;
-    sssom:confidence 1e+00 ;
-    sssom:mapping_justification semapv:ManualMappingCuration ;
-    sssom:object_label "NaN"^^xsd:double ;
-    sssom:subject_label "Variable" .
 
 

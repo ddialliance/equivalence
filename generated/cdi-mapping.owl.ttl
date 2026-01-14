@@ -9,7 +9,6 @@
 dcterms:created a owl:AnnotationProperty .
 
 <https://github.com/ddialliance/equivalence/raw/refs/heads/main/mappings/cdi.sssom.tsv> a owl:Ontology ;
-    dcterms:created "2026-01-14"^^xsd:date ;
     dcterms:description "Manually curated alignment of DDI CDI and the common DDI equivalence model" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> .
 
@@ -53,16 +52,6 @@ ddi:itemVersion a owl:ObjectProperty .
 
 [] a owl:Axiom ;
     dcterms:created "2026-01-14"^^xsd:date ;
-    owl:annotatedProperty owl:equivalentClass ;
-    owl:annotatedSource cdi:RepresentedVariable ;
-    owl:annotatedTarget ddi:RepresentedVariable ;
-    sssom:confidence 1e+00 ;
-    sssom:mapping_justification semapv:ManualMappingCuration ;
-    sssom:object_label "NaN"^^xsd:double ;
-    sssom:subject_label "Represented Variable" .
-
-[] a owl:Axiom ;
-    dcterms:created "2026-01-14"^^xsd:date ;
     owl:annotatedProperty owl:equivalentProperty ;
     owl:annotatedSource cdi:InternationalRegistrationDataIdentifier-dataIdentifier ;
     owl:annotatedTarget ddi:itemIdentifier ;
@@ -73,13 +62,13 @@ ddi:itemVersion a owl:ObjectProperty .
 
 [] a owl:Axiom ;
     dcterms:created "2026-01-14"^^xsd:date ;
-    owl:annotatedProperty owl:equivalentProperty ;
-    owl:annotatedSource cdi:InternationalRegistrationDataIdentifier-registrationAuthorityIdentifier ;
-    owl:annotatedTarget ddi:agencyIdentifier ;
+    owl:annotatedProperty owl:equivalentClass ;
+    owl:annotatedSource cdi:RepresentedVariable ;
+    owl:annotatedTarget ddi:RepresentedVariable ;
     sssom:confidence 1e+00 ;
     sssom:mapping_justification semapv:ManualMappingCuration ;
     sssom:object_label "NaN"^^xsd:double ;
-    sssom:subject_label "Registration Authority Identifier" .
+    sssom:subject_label "Represented Variable" .
 
 [] a owl:Axiom ;
     dcterms:created "2026-01-14"^^xsd:date ;
@@ -93,13 +82,13 @@ ddi:itemVersion a owl:ObjectProperty .
 
 [] a owl:Axiom ;
     dcterms:created "2026-01-14"^^xsd:date ;
-    owl:annotatedProperty owl:equivalentClass ;
-    owl:annotatedSource cdi:ConceptualVariable ;
-    owl:annotatedTarget ddi:ConceptualVariable ;
+    owl:annotatedProperty owl:equivalentProperty ;
+    owl:annotatedSource cdi:InternationalRegistrationDataIdentifier-registrationAuthorityIdentifier ;
+    owl:annotatedTarget ddi:agencyIdentifier ;
     sssom:confidence 1e+00 ;
     sssom:mapping_justification semapv:ManualMappingCuration ;
     sssom:object_label "NaN"^^xsd:double ;
-    sssom:subject_label "Conceptual Variable" .
+    sssom:subject_label "Registration Authority Identifier" .
 
 [] a owl:Axiom ;
     dcterms:created "2026-01-14"^^xsd:date ;
@@ -110,5 +99,15 @@ ddi:itemVersion a owl:ObjectProperty .
     sssom:mapping_justification semapv:ManualMappingCuration ;
     sssom:object_label "NaN"^^xsd:double ;
     sssom:subject_label "Version Identifier" .
+
+[] a owl:Axiom ;
+    dcterms:created "2026-01-13"^^xsd:date ;
+    owl:annotatedProperty owl:equivalentClass ;
+    owl:annotatedSource cdi:ConceptualVariable ;
+    owl:annotatedTarget ddi:ConceptualVariable ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:ManualMappingCuration ;
+    sssom:object_label "NaN"^^xsd:double ;
+    sssom:subject_label "Conceptual Variable" .
 
 

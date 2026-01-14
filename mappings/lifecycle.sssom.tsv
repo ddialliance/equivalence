@@ -1,15 +1,8 @@
-#curie_map:
-#  lifecycle: https://rdf-vocabulary.ddialliance.org/lifecycle#
-#  ddi: https://rdf-vocabulary.ddialliance.org/common#
-#  orcid: https://orcid.org/
-#mapping_set_id: https://github.com/ddialliance/equivalence/raw/refs/heads/main/mappings/lifecycle.sssom.tsv
-#mapping_set_description: Manually curated alignment DDI Lifecycle and the common DDI equivalence model
-#license: https://creativecommons.org/licenses/by/4.0/
 subject_id	subject_label	predicate_id	object_id	mapping_justification	mapping_date	confidence	comment
 lifecycle:ConceptualVariable	Conceptual Variable	owl:equivalentClass	ddi:ConceptualVariable	semapv:ManualMappingCuration	2026-01-14	1	
 lifecycle:RepresentedVariable	Represented Variable	owl:equivalentClass	ddi:RepresentedVariable	semapv:ManualMappingCuration	2026-01-14	1	
 lifecycle:Variable	Variable	owl:equivalentClass	ddi:InstanceVariable	semapv:ManualMappingCuration	2026-01-14	1	
 lifecycle:agency	Agency Identifier	owl:equivalentProperty	ddi:agencyIdentifier	semapv:ManualMappingCuration	2026-01-14	1	
 lifecycle:id	Item Identifier	owl:equivalentProperty	ddi:itemIdentifier	semapv:ManualMappingCuration	2026-01-14	1	
-lifecycle:urn	DDI URN	owl:equivalentProperty	ddi:ddiUrn	semapv:ManualMappingCuration	2026-01-14	1	
+lifecycle:urn	DDI URN	owl:equivalentProperty	ddi:ddiUrn	semapv:ManualMappingCuration	2026-01-13	1	
 lifecycle:version	Version	owl:equivalentProperty	ddi:itemVersion	semapv:ManualMappingCuration	2026-01-14	1	

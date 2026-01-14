@@ -1,0 +1,7 @@
+curie_map:
+  cdi: http://www.ddialliance.org/Specification/DDI-CDI/1.0/RDF/
+  ddi: https://rdf-vocabulary.ddialliance.org/common#
+  orcid: https://orcid.org/
+mapping_set_id: https://github.com/ddialliance/equivalence/raw/refs/heads/main/mappings/cdi.sssom.tsv
+mapping_set_description: Manually curated alignment of DDI CDI and the common DDI equivalence model
+license: https://creativecommons.org/licenses/by/4.0/

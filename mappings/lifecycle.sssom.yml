@@ -1,0 +1,7 @@
+curie_map:
+  lifecycle: https://rdf-vocabulary.ddialliance.org/lifecycle#
+  ddi: https://rdf-vocabulary.ddialliance.org/common#
+  orcid: https://orcid.org/
+mapping_set_id: https://github.com/ddialliance/equivalence/raw/refs/heads/main/mappings/lifecycle.sssom.tsv
+mapping_set_description: Manually curated alignment DDI Lifecycle and the common DDI equivalence model
+license: https://creativecommons.org/licenses/by/4.0/
