@@ -5,6 +5,7 @@ set -e
 gen-owl -f json-ld  ddi-common.yml > generated/ddi-common.json
 gen-owl -f ttl  ddi-common.yml > generated/ddi-common.owl.ttl
 
+mkdir -p build/work
 
 sssom parse -m mappings/lifecycle.sssom.yml -I tsv mappings/lifecycle.sssom.tsv --output build/work/lifecycle-merged.sssom.tsv
 sssom parse -m mappings/cdi.sssom.yml -I tsv mappings/cdi.sssom.tsv --output build/work/cdi-merged.sssom.tsv
