@@ -1,3 +1,4 @@
+[![Build and Package](https://github.com/ddialliance/equivalence/actions/workflows/build.yml/badge.svg)](https://github.com/ddialliance/equivalence/actions/workflows/build.yml)
 # RDF Equivalence Working Group
 
 
