@@ -26,6 +26,9 @@ lifecycle:ConceptualVariable a owl:Class ;
 lifecycle:RepresentedVariable a owl:Class ;
     owl:equivalentClass ddi:RepresentedVariable .
 
+lifecycle:UnitType a owl:Class ;
+    owl:equivalentClass ddi:UnitType .
+
 lifecycle:Variable a owl:Class ;
     owl:equivalentClass ddi:InstanceVariable .
 
@@ -47,6 +50,8 @@ ddi:InstanceVariable a owl:Class .
 
 ddi:RepresentedVariable a owl:Class .
 
+ddi:UnitType a owl:Class .
+
 ddi:agencyIdentifier a owl:ObjectProperty .
 
 ddi:ddiUrn a owl:ObjectProperty .
@@ -57,33 +62,13 @@ ddi:itemVersion a owl:ObjectProperty .
 
 [] a owl:Axiom ;
     dcterms:created "2026-01-14"^^xsd:date ;
-    owl:annotatedProperty owl:equivalentProperty ;
-    owl:annotatedSource lifecycle:version ;
-    owl:annotatedTarget ddi:itemVersion ;
-    sssom:confidence 1e+00 ;
-    sssom:mapping_justification semapv:ManualMappingCuration ;
-    sssom:object_label "NaN"^^xsd:double ;
-    sssom:subject_label "Version" .
-
-[] a owl:Axiom ;
-    dcterms:created "2026-01-14"^^xsd:date ;
-    owl:annotatedProperty owl:equivalentProperty ;
-    owl:annotatedSource lifecycle:agency ;
-    owl:annotatedTarget ddi:agencyIdentifier ;
-    sssom:confidence 1e+00 ;
-    sssom:mapping_justification semapv:ManualMappingCuration ;
-    sssom:object_label "NaN"^^xsd:double ;
-    sssom:subject_label "Agency Identifier" .
-
-[] a owl:Axiom ;
-    dcterms:created "2026-01-14"^^xsd:date ;
     owl:annotatedProperty owl:equivalentClass ;
-    owl:annotatedSource lifecycle:RepresentedVariable ;
-    owl:annotatedTarget ddi:RepresentedVariable ;
+    owl:annotatedSource lifecycle:Variable ;
+    owl:annotatedTarget ddi:InstanceVariable ;
     sssom:confidence 1e+00 ;
     sssom:mapping_justification semapv:ManualMappingCuration ;
     sssom:object_label "NaN"^^xsd:double ;
-    sssom:subject_label "Represented Variable" .
+    sssom:subject_label "Variable" .
 
 [] a owl:Axiom ;
     dcterms:created "2026-01-13"^^xsd:date ;
@@ -97,13 +82,43 @@ ddi:itemVersion a owl:ObjectProperty .
 
 [] a owl:Axiom ;
     dcterms:created "2026-01-14"^^xsd:date ;
-    owl:annotatedProperty owl:equivalentClass ;
-    owl:annotatedSource lifecycle:Variable ;
-    owl:annotatedTarget ddi:InstanceVariable ;
+    owl:annotatedProperty owl:equivalentProperty ;
+    owl:annotatedSource lifecycle:version ;
+    owl:annotatedTarget ddi:itemVersion ;
     sssom:confidence 1e+00 ;
     sssom:mapping_justification semapv:ManualMappingCuration ;
     sssom:object_label "NaN"^^xsd:double ;
-    sssom:subject_label "Variable" .
+    sssom:subject_label "Version" .
+
+[] a owl:Axiom ;
+    dcterms:created "2026-01-14"^^xsd:date ;
+    owl:annotatedProperty owl:equivalentClass ;
+    owl:annotatedSource lifecycle:ConceptualVariable ;
+    owl:annotatedTarget ddi:ConceptualVariable ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:ManualMappingCuration ;
+    sssom:object_label "NaN"^^xsd:double ;
+    sssom:subject_label "Conceptual Variable" .
+
+[] a owl:Axiom ;
+    dcterms:created "2026-01-14"^^xsd:date ;
+    owl:annotatedProperty owl:equivalentProperty ;
+    owl:annotatedSource lifecycle:agency ;
+    owl:annotatedTarget ddi:agencyIdentifier ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:ManualMappingCuration ;
+    sssom:object_label "NaN"^^xsd:double ;
+    sssom:subject_label "Agency Identifier" .
+
+[] a owl:Axiom ;
+    dcterms:created "2026-01-30"^^xsd:date ;
+    owl:annotatedProperty owl:equivalentClass ;
+    owl:annotatedSource lifecycle:UnitType ;
+    owl:annotatedTarget ddi:UnitType ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:ManualMappingCuration ;
+    sssom:object_label "NaN"^^xsd:double ;
+    sssom:subject_label "Unit Type" .
 
 [] a owl:Axiom ;
     dcterms:created "2026-01-14"^^xsd:date ;
@@ -118,11 +133,11 @@ ddi:itemVersion a owl:ObjectProperty .
 [] a owl:Axiom ;
     dcterms:created "2026-01-14"^^xsd:date ;
     owl:annotatedProperty owl:equivalentClass ;
-    owl:annotatedSource lifecycle:ConceptualVariable ;
-    owl:annotatedTarget ddi:ConceptualVariable ;
+    owl:annotatedSource lifecycle:RepresentedVariable ;
+    owl:annotatedTarget ddi:RepresentedVariable ;
     sssom:confidence 1e+00 ;
     sssom:mapping_justification semapv:ManualMappingCuration ;
     sssom:object_label "NaN"^^xsd:double ;
-    sssom:subject_label "Conceptual Variable" .
+    sssom:subject_label "Represented Variable" .
 
 

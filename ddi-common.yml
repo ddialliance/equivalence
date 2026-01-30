@@ -37,6 +37,15 @@ classes:
       Most general level in variable cascade. Used in DDI-Lifecycle, DDI-CDI, GSIM (Generic Statistical Information Model). 
       Top level in variable cascade, with represented variable and instance variable.
 
+  UnitType:
+    class_uri: ddi:UnitType
+    description: >-
+      Class of units defined by essential characteristics.
+      Examples: person, household, business establishment. 
+      A kind of entity based on a set of characteristics. 
+      The characteristics are specific to the study context. 
+      Ideally a category of individuals in a non-overlapping classification.
+
 slots:
 
   itemIdentifier:

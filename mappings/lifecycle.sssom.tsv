@@ -1,6 +1,7 @@
 subject_id	subject_label	predicate_id	object_id	mapping_justification	mapping_date	confidence	comment
 lifecycle:ConceptualVariable	Conceptual Variable	owl:equivalentClass	ddi:ConceptualVariable	semapv:ManualMappingCuration	2026-01-14	1	
 lifecycle:RepresentedVariable	Represented Variable	owl:equivalentClass	ddi:RepresentedVariable	semapv:ManualMappingCuration	2026-01-14	1	
+lifecycle:UnitType	Unit Type	owl:equivalentClass	ddi:UnitType	semapv:ManualMappingCuration	2026-01-30	1	
 lifecycle:Variable	Variable	owl:equivalentClass	ddi:InstanceVariable	semapv:ManualMappingCuration	2026-01-14	1	
 lifecycle:agency	Agency Identifier	owl:equivalentProperty	ddi:agencyIdentifier	semapv:ManualMappingCuration	2026-01-14	1	
 lifecycle:id	Item Identifier	owl:equivalentProperty	ddi:itemIdentifier	semapv:ManualMappingCuration	2026-01-14	1	

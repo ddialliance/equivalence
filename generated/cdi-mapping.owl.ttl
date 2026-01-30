@@ -38,27 +38,22 @@ cdi:InternationalRegistrationDataIdentifier-versionIdentifier a owl:ObjectProper
 cdi:RepresentedVariable a owl:Class ;
     owl:equivalentClass ddi:RepresentedVariable .
 
+cdi:UnitType a owl:Class ;
+    owl:equivalentClass ddi:UnitType .
+
 ddi:ConceptualVariable a owl:Class .
 
 ddi:InstanceVariable a owl:Class .
 
 ddi:RepresentedVariable a owl:Class .
 
+ddi:UnitType a owl:Class .
+
 ddi:agencyIdentifier a owl:ObjectProperty .
 
 ddi:itemIdentifier a owl:ObjectProperty .
 
 ddi:itemVersion a owl:ObjectProperty .
-
-[] a owl:Axiom ;
-    dcterms:created "2026-01-14"^^xsd:date ;
-    owl:annotatedProperty owl:equivalentProperty ;
-    owl:annotatedSource cdi:InternationalRegistrationDataIdentifier-dataIdentifier ;
-    owl:annotatedTarget ddi:itemIdentifier ;
-    sssom:confidence 1e+00 ;
-    sssom:mapping_justification semapv:ManualMappingCuration ;
-    sssom:object_label "NaN"^^xsd:double ;
-    sssom:subject_label "Data Identifier" .
 
 [] a owl:Axiom ;
     dcterms:created "2026-01-14"^^xsd:date ;
@@ -69,6 +64,36 @@ ddi:itemVersion a owl:ObjectProperty .
     sssom:mapping_justification semapv:ManualMappingCuration ;
     sssom:object_label "NaN"^^xsd:double ;
     sssom:subject_label "Represented Variable" .
+
+[] a owl:Axiom ;
+    dcterms:created "2026-01-13"^^xsd:date ;
+    owl:annotatedProperty owl:equivalentClass ;
+    owl:annotatedSource cdi:ConceptualVariable ;
+    owl:annotatedTarget ddi:ConceptualVariable ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:ManualMappingCuration ;
+    sssom:object_label "NaN"^^xsd:double ;
+    sssom:subject_label "Conceptual Variable" .
+
+[] a owl:Axiom ;
+    dcterms:created "2026-01-30"^^xsd:date ;
+    owl:annotatedProperty owl:equivalentClass ;
+    owl:annotatedSource cdi:UnitType ;
+    owl:annotatedTarget ddi:UnitType ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:ManualMappingCuration ;
+    sssom:object_label "NaN"^^xsd:double ;
+    sssom:subject_label "Unit Type" .
+
+[] a owl:Axiom ;
+    dcterms:created "2026-01-14"^^xsd:date ;
+    owl:annotatedProperty owl:equivalentProperty ;
+    owl:annotatedSource cdi:InternationalRegistrationDataIdentifier-versionIdentifier ;
+    owl:annotatedTarget ddi:itemVersion ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:ManualMappingCuration ;
+    sssom:object_label "NaN"^^xsd:double ;
+    sssom:subject_label "Version Identifier" .
 
 [] a owl:Axiom ;
     dcterms:created "2026-01-14"^^xsd:date ;
@@ -93,21 +118,11 @@ ddi:itemVersion a owl:ObjectProperty .
 [] a owl:Axiom ;
     dcterms:created "2026-01-14"^^xsd:date ;
     owl:annotatedProperty owl:equivalentProperty ;
-    owl:annotatedSource cdi:InternationalRegistrationDataIdentifier-versionIdentifier ;
-    owl:annotatedTarget ddi:itemVersion ;
+    owl:annotatedSource cdi:InternationalRegistrationDataIdentifier-dataIdentifier ;
+    owl:annotatedTarget ddi:itemIdentifier ;
     sssom:confidence 1e+00 ;
     sssom:mapping_justification semapv:ManualMappingCuration ;
     sssom:object_label "NaN"^^xsd:double ;
-    sssom:subject_label "Version Identifier" .
-
-[] a owl:Axiom ;
-    dcterms:created "2026-01-13"^^xsd:date ;
-    owl:annotatedProperty owl:equivalentClass ;
-    owl:annotatedSource cdi:ConceptualVariable ;
-    owl:annotatedTarget ddi:ConceptualVariable ;
-    sssom:confidence 1e+00 ;
-    sssom:mapping_justification semapv:ManualMappingCuration ;
-    sssom:object_label "NaN"^^xsd:double ;
-    sssom:subject_label "Conceptual Variable" .
+    sssom:subject_label "Data Identifier" .
 
 
