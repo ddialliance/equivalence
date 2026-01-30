@@ -25,7 +25,9 @@ jobs:
     - name: Validate SSSOM files
       run: |
         set -e
-        for file in mappings/*.sssom.tsv; do
+        sssom parse -m mappings/lifecycle.sssom.yml -I tsv mappings/lifecycle.sssom.tsv --output build/work/lifecycle-merged.sssom.tsv
+        sssom parse -m mappings/cdi.sssom.yml -I tsv mappings/cdi.sssom.tsv --output build/work/cdi-merged.sssom.tsv
+        for file in build/work/*.sssom.tsv; do
           echo "Validating $file..."
           sssom validate "$file"
         done
